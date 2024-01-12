@@ -9,6 +9,7 @@
 }
 :root{
     --Gradiant-500 : linear-gradient(to right, #5640B5, #f7366f);
+    --Gradiant-500-re : linear-gradient(to left, #5640B5, #f7366f);
     --hero_pt:100px;
     --bg_light-white:linear-gradient(to top, #07070703, #FFFFFF1C);
 
@@ -190,6 +191,7 @@ header .right_side button{
     flex-direction: row;
     margin-top: 30px;
     gap: 24px;
+    flex-wrap: wrap;
 }
 .hero .content .btns a{
     border-radius: 6px;
@@ -433,6 +435,7 @@ header .right_side button{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin-bottom: 30px;
 }
 .review .items_card{
     border: 2.5px solid #6b6b6b;
@@ -475,6 +478,28 @@ header .right_side button{
 }
 
 
+
+.owl-nav{
+    position: absolute;
+    top: -65px;
+    right: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    background: var(--Gradiant-500);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .owl-carousel .owl-nav button.owl-next{
+    background: var(--Gradiant-500-re);
+  }
 /* suscribe */
 .suscribe{
     background: black;
